@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Night variant. Zaxifin is dark-first so the values are identical to
+        the light theme, but the file is declared so the system doesn't fall
+        back to a default theme in dark mode.
+    -->
+    <style name="Theme.Zaxifin.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/Theme.Zaxifin</item>
+    </style>
+</resources>

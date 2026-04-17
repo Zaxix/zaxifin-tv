@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Splash screen theme. Attached to the launcher activity in the manifest.
+        Uses androidx.core:core-splashscreen so it works back to API 21 while
+        rendering natively on API 31+.
+    -->
+    <style name="Theme.Zaxifin.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/Theme.Zaxifin</item>
+    </style>
+
+    <!--
+        Main app theme. Uses Leanback as the parent so TV-specific attributes
+        (focus highlights, D-pad behaviour) are honoured; Compose for TV reads
+        the colors below via MaterialTheme overrides anyway.
+    -->
+    <style name="Theme.Zaxifin" parent="Theme.Leanback">
+        <item name="android:windowBackground">@color/canvas_black</item>
+        <item name="android:colorBackground">@color/canvas_black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+</resources>

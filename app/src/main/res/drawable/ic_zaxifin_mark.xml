@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Vector version of the Zaxifin "Z" mark. Uses a linear gradient to mimic
+    the red-on-red highlight from the PNG source. Safe to tint, scale, and
+    animate. Use in place of @drawable/zaxifin_mark when you need crisp
+    rendering at arbitrary sizes (e.g. in player overlays or toolbars).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Soft shadow behind the lower bar -->
+    <path
+        android:fillColor="#40000000"
+        android:pathData="M10,78 L78,78 L78,92 L10,92 Z" />
+
+    <!-- Upper horizontal bar -->
+    <path android:pathData="M14,14 L86,14 L86,30 L14,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="14" android:startY="14"
+                android:endX="86"   android:endY="30">
+                <item android:offset="0.0" android:color="#FF3B3B" />
+                <item android:offset="0.55" android:color="#CC1414" />
+                <item android:offset="1.0" android:color="#8B0A0A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diagonal stroke of the Z -->
+    <path android:pathData="M78,24 L30,80 L22,80 L70,24 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="70" android:startY="24"
+                android:endX="22"   android:endY="80">
+                <item android:offset="0.0" android:color="#E52121" />
+                <item android:offset="1.0" android:color="#8B0A0A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Lower horizontal bar -->
+    <path android:pathData="M14,72 L86,72 L86,88 L14,88 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="14" android:startY="72"
+                android:endX="86"   android:endY="88">
+                <item android:offset="0.0" android:color="#FF3B3B" />
+                <item android:offset="0.55" android:color="#CC1414" />
+                <item android:offset="1.0" android:color="#8B0A0A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner highlight on the top bar for the rolled-edge effect -->
+    <path
+        android:pathData="M16,14 L84,14 L84,18 L16,18 Z"
+        android:fillColor="#66FFFFFF" />
+
+    <!-- Inner highlight on the bottom bar -->
+    <path
+        android:pathData="M16,72 L84,72 L84,76 L16,76 Z"
+        android:fillColor="#55FFFFFF" />
+</vector>

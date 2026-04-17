@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Jellyfin servers are frequently self-hosted on the local network over
+    plain HTTP. We permit cleartext only for private address ranges; any
+    public server must use HTTPS. This satisfies Android 9+ cleartext
+    defaults and keeps the app Play Store-friendly.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- RFC 1918 private ranges + link-local + localhost -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.0.0</domain>
+        <domain includeSubdomains="true">172.16.0.0</domain>
+        <domain includeSubdomains="true">192.168.0.0</domain>
+        <domain includeSubdomains="true">169.254.0.0</domain>
+        <domain includeSubdomains="true">.local</domain>
+    </domain-config>
+</network-security-config>

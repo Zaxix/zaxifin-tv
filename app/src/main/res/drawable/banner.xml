@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TV banner drawable for Android TV / Fire TV launcher tile.
+    Required size: 320dp x 180dp. Declared in AndroidManifest via
+    android:banner="@drawable/banner".
+
+    Uses the pre-rendered banner_tv.png (320x180) which composites the
+    full Zaxifin wordmark over the brand background.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/banner_background" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/banner_tv"
+            android:gravity="center" />
+    </item>
+</layer-list>

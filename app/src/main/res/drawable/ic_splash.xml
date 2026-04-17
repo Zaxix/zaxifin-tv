@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Splash screen icon for androidx.core.splashscreen.
+    The base PNG is 432x432 with the Z mark in the inner 288x288 safe zone,
+    matching the Material splash spec (SplashScreen auto-applies a 72dp
+    circular mask on API 31+).
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/splash_icon"
+            android:gravity="center" />
+    </item>
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Auto Backup rules. Exclude transient playback state and image cache
+    from cloud backup; include user preferences and server credentials.
+-->
+<full-backup-content>
+    <include domain="sharedpref" path="zaxifin_prefs.xml" />
+    <include domain="database" path="servers.db" />
+    <exclude domain="database" path="resume_positions.db" />
+    <exclude domain="database" path="ratings_cache.db" />
+    <exclude domain="file" path="image_cache/" />
+</full-backup-content>

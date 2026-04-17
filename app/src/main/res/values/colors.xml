@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand palette -->
+    <color name="brand_red">#CC1414</color>
+    <color name="brand_red_dark">#8B0A0A</color>
+    <color name="brand_red_highlight">#FF3B3B</color>
+    <color name="brand_black">#0A0A0C</color>
+    <color name="brand_white">#F5F5F7</color>
+
+    <!-- Adaptive icon background -->
+    <color name="ic_launcher_background">#0A0A0C</color>
+
+    <!-- TV banner background (matches generated banner PNG) -->
+    <color name="banner_background">#0B0B0D</color>
+
+    <!-- Splash background -->
+    <color name="splash_background">#000000</color>
+
+    <!-- Aurora design-system tokens (kept here so they're available from XML themes too) -->
+    <color name="canvas_black">#000000</color>
+    <color name="surface_elevated">#0A0A0C</color>
+    <color name="surface_card">#141418</color>
+    <color name="text_primary">#F5F5F7</color>
+    <color name="text_secondary">#B3F5F5F7</color>
+    <color name="text_tertiary">#80F5F5F7</color>
+    <color name="accent_amber">#FFC83D</color>
+    <color name="accent_cyan">#0AE4F0</color>
+    <color name="accent_green">#2BE881</color>
+    <color name="focus_ring">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zaxifin</string>
+    <string name="app_tagline">Your media, beautifully.</string>
+    <string name="banner_content_description">Zaxifin — Jellyfin client for TV</string>
+</resources>
+

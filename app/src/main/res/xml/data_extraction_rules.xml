@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Android 12+ data extraction rules. Same policy as backup_rules.xml
+    but split into cloud vs device-transfer buckets as Android now
+    distinguishes between them.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="sharedpref" path="zaxifin_prefs.xml" />
+        <include domain="database" path="servers.db" />
+        <exclude domain="database" path="resume_positions.db" />
+        <exclude domain="database" path="ratings_cache.db" />
+        <exclude domain="file" path="image_cache/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="sharedpref" path="zaxifin_prefs.xml" />
+        <include domain="database" path="servers.db" />
+        <include domain="database" path="resume_positions.db" />
+        <exclude domain="database" path="ratings_cache.db" />
+        <exclude domain="file" path="image_cache/" />
+    </device-transfer>
+</data-extraction-rules>
