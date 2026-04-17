@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.aurora.tv.domain"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 28

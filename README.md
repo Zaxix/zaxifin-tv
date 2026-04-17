@@ -10,7 +10,8 @@ This repo currently contains a **runnable UI prototype** (offline / placeholder 
 ## Requirements
 
 - Android Studio (recent stable)
-- JDK 17
+- Android SDK (installed via Android Studio)
+- **JDK 17** for Gradle/Android Gradle Plugin compatibility
 
 ## Run
 
@@ -20,6 +21,37 @@ This repo currently contains a **runnable UI prototype** (offline / placeholder 
 
 ## Notes
 
-- **Branding**: app name is **Zaxifin**. The launcher banner/icon are currently vector placeholders; we can swap in your provided logo asset next.
+- **Branding**: app name is **Zaxifin**, using the Android TV banner + launcher resources from your `zaxifin-android-resources.zip`.
 - **Jellyfin integration** (SDK, auth, rows, images, playback URLs) is the next step once the UI shell is validated.
+
+## Release APK (Fire TV / Downloader)
+
+### Local signing (fast path)
+
+1. Generate a local keystore + `keystore.properties` (gitignored):
+
+`tools\\gen_release_keystore.cmd`
+
+2. Build a signed release APK in Android Studio: **Build → Generate Signed App Bundle or APK → APK**.
+
+### GitHub Actions (Downloader-friendly URL)
+
+This repo includes `.github/workflows/release-apk.yml`.
+
+1. Add these repository secrets:
+   - `SIGNING_KEYSTORE_BASE64` (base64 of `keystore/release.jks`)
+   - `SIGNING_STORE_PASSWORD`
+   - `SIGNING_KEY_PASSWORD`
+   - `SIGNING_KEY_ALIAS` (optional; defaults to `release`)
+
+2. Push a tag like `v0.1.0` to run the workflow.
+3. Download the uploaded APK from the workflow run artifacts (or the GitHub Release asset if you created a release from the tag).
+
+### If Gradle fails on a “too new” JDK (Windows)
+
+If your default `java` is newer than AGP/Kotlin DSL supports for script compilation, `gradlew.bat` will automatically prefer a repo-local JDK 17 if you unzip Temurin 17 to:
+
+`jdk17/unpack/jdk-17.0.18+8/`
+
+Alternatively, set `JAVA_HOME` to a JDK 17 install, or set `org.gradle.java.home` in `local.properties` (gitignored).
 

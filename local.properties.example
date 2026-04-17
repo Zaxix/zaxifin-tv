@@ -1,0 +1,7 @@
+## Copy to `local.properties` (gitignored) and adjust paths for your machine.
+
+# Android SDK (Android Studio default on Windows)
+sdk.dir=C\:\\Users\\YOU\\AppData\\Local\\Android\\Sdk
+
+# Optional: force Gradle's toolchain JVM (useful if your system `java` is very new)
+# org.gradle.java.home=C\:\\path\\to\\jdk-17

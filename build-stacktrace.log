@@ -1,0 +1,530 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Type-safe project accessors is an incubating feature.
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :domain:preBuild UP-TO-DATE
+> Task :domain:preReleaseBuild UP-TO-DATE
+> Task :domain:writeReleaseAarMetadata UP-TO-DATE
+> Task :core:common:preBuild UP-TO-DATE
+> Task :core:common:preReleaseBuild UP-TO-DATE
+> Task :core:common:writeReleaseAarMetadata UP-TO-DATE
+> Task :core:designsystem:preBuild UP-TO-DATE
+> Task :core:designsystem:preReleaseBuild UP-TO-DATE
+> Task :core:designsystem:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:detail:preBuild UP-TO-DATE
+> Task :feature:detail:preReleaseBuild UP-TO-DATE
+> Task :feature:detail:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:home:preBuild UP-TO-DATE
+> Task :feature:home:preReleaseBuild UP-TO-DATE
+> Task :feature:home:writeReleaseAarMetadata UP-TO-DATE
+> Task :feature:player:preBuild UP-TO-DATE
+> Task :feature:player:preReleaseBuild UP-TO-DATE
+> Task :feature:player:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :domain:generateReleaseResValues UP-TO-DATE
+> Task :domain:generateReleaseResources UP-TO-DATE
+> Task :domain:packageReleaseResources UP-TO-DATE
+> Task :core:common:generateReleaseResValues UP-TO-DATE
+> Task :core:common:generateReleaseResources UP-TO-DATE
+> Task :core:common:packageReleaseResources UP-TO-DATE
+> Task :core:designsystem:generateReleaseResValues UP-TO-DATE
+> Task :core:designsystem:generateReleaseResources UP-TO-DATE
+> Task :core:designsystem:packageReleaseResources UP-TO-DATE
+> Task :feature:detail:generateReleaseResValues UP-TO-DATE
+> Task :feature:detail:generateReleaseResources UP-TO-DATE
+> Task :feature:detail:packageReleaseResources UP-TO-DATE
+> Task :feature:home:generateReleaseResValues UP-TO-DATE
+> Task :feature:home:generateReleaseResources UP-TO-DATE
+> Task :feature:home:packageReleaseResources UP-TO-DATE
+> Task :feature:player:generateReleaseResValues UP-TO-DATE
+> Task :feature:player:generateReleaseResources UP-TO-DATE
+> Task :feature:player:packageReleaseResources UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:packageReleaseResources UP-TO-DATE
+> Task :app:parseReleaseLocalResources UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :domain:extractDeepLinksRelease UP-TO-DATE
+> Task :domain:processReleaseManifest UP-TO-DATE
+> Task :core:common:extractDeepLinksRelease UP-TO-DATE
+> Task :core:common:processReleaseManifest UP-TO-DATE
+> Task :core:designsystem:extractDeepLinksRelease UP-TO-DATE
+> Task :core:designsystem:processReleaseManifest UP-TO-DATE
+> Task :feature:detail:extractDeepLinksRelease UP-TO-DATE
+> Task :feature:detail:processReleaseManifest UP-TO-DATE
+> Task :feature:home:extractDeepLinksRelease UP-TO-DATE
+> Task :feature:home:processReleaseManifest UP-TO-DATE
+> Task :feature:player:extractDeepLinksRelease UP-TO-DATE
+> Task :feature:player:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :domain:compileReleaseLibraryResources UP-TO-DATE
+> Task :domain:parseReleaseLocalResources UP-TO-DATE
+> Task :domain:generateReleaseRFile UP-TO-DATE
+> Task :core:common:compileReleaseLibraryResources UP-TO-DATE
+> Task :core:common:parseReleaseLocalResources UP-TO-DATE
+> Task :core:common:generateReleaseRFile UP-TO-DATE
+> Task :core:designsystem:compileReleaseLibraryResources UP-TO-DATE
+> Task :core:designsystem:parseReleaseLocalResources UP-TO-DATE
+> Task :core:designsystem:generateReleaseRFile UP-TO-DATE
+> Task :feature:detail:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:detail:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:detail:generateReleaseRFile UP-TO-DATE
+> Task :feature:home:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:home:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:home:generateReleaseRFile UP-TO-DATE
+> Task :feature:player:compileReleaseLibraryResources UP-TO-DATE
+> Task :feature:player:parseReleaseLocalResources UP-TO-DATE
+> Task :feature:player:generateReleaseRFile UP-TO-DATE
+> Task :app:processReleaseResources UP-TO-DATE
+> Task :domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :domain:compileReleaseKotlin UP-TO-DATE
+> Task :domain:javaPreCompileRelease UP-TO-DATE
+> Task :domain:compileReleaseJavaWithJavac NO-SOURCE
+> Task :domain:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :core:common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:common:compileReleaseKotlin UP-TO-DATE
+> Task :core:common:javaPreCompileRelease UP-TO-DATE
+> Task :core:common:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:common:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :core:designsystem:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:designsystem:compileReleaseKotlin UP-TO-DATE
+> Task :core:designsystem:javaPreCompileRelease UP-TO-DATE
+> Task :core:designsystem:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:designsystem:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:detail:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :feature:detail:compileReleaseKotlin UP-TO-DATE
+> Task :feature:detail:javaPreCompileRelease UP-TO-DATE
+> Task :feature:detail:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:detail:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :feature:home:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :feature:home:compileReleaseKotlin UP-TO-DATE
+> Task :feature:home:javaPreCompileRelease UP-TO-DATE
+> Task :feature:home:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:home:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :domain:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :core:common:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :core:designsystem:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:player:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :feature:player:kaptGenerateStubsReleaseKotlin UP-TO-DATE
+> Task :feature:player:kaptReleaseKotlin UP-TO-DATE
+> Task :feature:player:compileReleaseKotlin UP-TO-DATE
+> Task :feature:player:javaPreCompileRelease UP-TO-DATE
+> Task :feature:player:compileReleaseJavaWithJavac NO-SOURCE
+> Task :feature:player:transformReleaseClassesWithAsm UP-TO-DATE
+> Task :feature:player:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :app:kaptGenerateStubsReleaseKotlin UP-TO-DATE
+> Task :app:kaptReleaseKotlin UP-TO-DATE
+> Task :app:compileReleaseKotlin UP-TO-DATE
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :feature:player:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:home:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :feature:detail:bundleLibRuntimeToJarRelease UP-TO-DATE
+> Task :domain:processReleaseJavaRes UP-TO-DATE
+> Task :app:hiltAggregateDepsRelease UP-TO-DATE
+> Task :app:hiltJavaCompileRelease UP-TO-DATE
+> Task :domain:createFullJarRelease UP-TO-DATE
+> Task :domain:extractProguardFiles UP-TO-DATE
+> Task :domain:generateReleaseLintModel UP-TO-DATE
+> Task :domain:prepareLintJarForPublish UP-TO-DATE
+> Task :core:common:processReleaseJavaRes UP-TO-DATE
+> Task :core:common:createFullJarRelease UP-TO-DATE
+> Task :core:common:extractProguardFiles UP-TO-DATE
+> Task :core:common:generateReleaseLintModel UP-TO-DATE
+> Task :core:common:prepareLintJarForPublish UP-TO-DATE
+> Task :core:designsystem:processReleaseJavaRes UP-TO-DATE
+> Task :core:designsystem:createFullJarRelease UP-TO-DATE
+> Task :core:designsystem:extractProguardFiles UP-TO-DATE
+> Task :core:designsystem:generateReleaseLintModel UP-TO-DATE
+> Task :core:designsystem:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:detail:processReleaseJavaRes UP-TO-DATE
+> Task :feature:detail:createFullJarRelease UP-TO-DATE
+> Task :feature:detail:extractProguardFiles UP-TO-DATE
+> Task :feature:detail:generateReleaseLintModel UP-TO-DATE
+> Task :feature:detail:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:home:processReleaseJavaRes UP-TO-DATE
+> Task :feature:home:createFullJarRelease UP-TO-DATE
+> Task :feature:home:extractProguardFiles UP-TO-DATE
+> Task :feature:home:generateReleaseLintModel UP-TO-DATE
+> Task :feature:home:prepareLintJarForPublish UP-TO-DATE
+> Task :feature:player:processReleaseJavaRes UP-TO-DATE
+> Task :feature:player:createFullJarRelease UP-TO-DATE
+> Task :feature:player:extractProguardFiles UP-TO-DATE
+> Task :feature:player:generateReleaseLintModel UP-TO-DATE
+> Task :feature:player:prepareLintJarForPublish UP-TO-DATE
+> Task :app:generateReleaseLintVitalReportModel UP-TO-DATE
+> Task :feature:player:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:player:mergeReleaseNativeLibs NO-SOURCE
+> Task :feature:player:stripReleaseDebugSymbols NO-SOURCE
+> Task :feature:player:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:player:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:player:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:player:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:player:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:player:mergeReleaseShaders UP-TO-DATE
+> Task :feature:player:compileReleaseShaders NO-SOURCE
+> Task :feature:player:generateReleaseAssets UP-TO-DATE
+> Task :feature:player:packageReleaseAssets UP-TO-DATE
+> Task :feature:player:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:player:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:player:syncReleaseLibJars UP-TO-DATE
+> Task :feature:player:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :core:common:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :core:common:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:common:stripReleaseDebugSymbols NO-SOURCE
+> Task :core:common:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:common:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :core:common:extractReleaseAnnotations UP-TO-DATE
+> Task :core:common:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:common:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:common:mergeReleaseShaders UP-TO-DATE
+> Task :core:common:compileReleaseShaders NO-SOURCE
+> Task :core:common:generateReleaseAssets UP-TO-DATE
+> Task :core:common:packageReleaseAssets UP-TO-DATE
+> Task :core:common:prepareReleaseArtProfile UP-TO-DATE
+> Task :core:common:mergeReleaseJavaResource UP-TO-DATE
+> Task :core:common:syncReleaseLibJars UP-TO-DATE
+> Task :core:common:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :feature:home:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:home:mergeReleaseNativeLibs NO-SOURCE
+> Task :feature:home:stripReleaseDebugSymbols NO-SOURCE
+> Task :feature:home:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:home:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:home:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:home:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:home:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:home:mergeReleaseShaders UP-TO-DATE
+> Task :feature:home:compileReleaseShaders NO-SOURCE
+> Task :feature:home:generateReleaseAssets UP-TO-DATE
+> Task :feature:home:packageReleaseAssets UP-TO-DATE
+> Task :feature:home:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:home:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:home:syncReleaseLibJars UP-TO-DATE
+> Task :feature:home:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :feature:detail:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :feature:detail:mergeReleaseNativeLibs NO-SOURCE
+> Task :feature:detail:stripReleaseDebugSymbols NO-SOURCE
+> Task :feature:detail:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :feature:detail:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :feature:detail:extractReleaseAnnotations UP-TO-DATE
+> Task :feature:detail:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :feature:detail:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :feature:detail:mergeReleaseShaders UP-TO-DATE
+> Task :feature:detail:compileReleaseShaders NO-SOURCE
+> Task :feature:detail:generateReleaseAssets UP-TO-DATE
+> Task :feature:detail:packageReleaseAssets UP-TO-DATE
+> Task :feature:detail:prepareReleaseArtProfile UP-TO-DATE
+> Task :feature:detail:mergeReleaseJavaResource UP-TO-DATE
+> Task :feature:detail:syncReleaseLibJars UP-TO-DATE
+> Task :feature:detail:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :core:designsystem:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :core:designsystem:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:designsystem:stripReleaseDebugSymbols NO-SOURCE
+> Task :core:designsystem:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:designsystem:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :core:designsystem:extractReleaseAnnotations UP-TO-DATE
+> Task :core:designsystem:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :core:designsystem:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :core:designsystem:mergeReleaseShaders UP-TO-DATE
+> Task :core:designsystem:compileReleaseShaders NO-SOURCE
+> Task :core:designsystem:generateReleaseAssets UP-TO-DATE
+> Task :core:designsystem:packageReleaseAssets UP-TO-DATE
+> Task :core:designsystem:prepareReleaseArtProfile UP-TO-DATE
+> Task :core:designsystem:mergeReleaseJavaResource UP-TO-DATE
+> Task :core:designsystem:syncReleaseLibJars UP-TO-DATE
+> Task :core:designsystem:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :domain:mergeReleaseJniLibFolders UP-TO-DATE
+> Task :domain:mergeReleaseNativeLibs NO-SOURCE
+> Task :domain:stripReleaseDebugSymbols NO-SOURCE
+> Task :domain:copyReleaseJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :domain:extractDeepLinksForAarRelease UP-TO-DATE
+> Task :domain:extractReleaseAnnotations UP-TO-DATE
+> Task :domain:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :domain:mergeReleaseConsumerProguardFiles UP-TO-DATE
+> Task :domain:mergeReleaseShaders UP-TO-DATE
+> Task :domain:compileReleaseShaders NO-SOURCE
+> Task :domain:generateReleaseAssets UP-TO-DATE
+> Task :domain:packageReleaseAssets UP-TO-DATE
+> Task :domain:prepareReleaseArtProfile UP-TO-DATE
+> Task :domain:mergeReleaseJavaResource UP-TO-DATE
+> Task :domain:syncReleaseLibJars UP-TO-DATE
+> Task :domain:bundleReleaseLocalLintAar UP-TO-DATE
+> Task :domain:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :domain:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :core:common:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :core:common:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :core:designsystem:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :core:designsystem:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :feature:detail:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :feature:detail:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :feature:home:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :feature:home:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :feature:player:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :feature:player:writeReleaseLintModelMetadata UP-TO-DATE
+> Task :app:lintVitalAnalyzeRelease UP-TO-DATE
+> Task :domain:generateReleaseLintVitalModel UP-TO-DATE
+> Task :core:common:generateReleaseLintVitalModel UP-TO-DATE
+> Task :core:designsystem:generateReleaseLintVitalModel UP-TO-DATE
+> Task :feature:detail:generateReleaseLintVitalModel UP-TO-DATE
+> Task :feature:home:generateReleaseLintVitalModel UP-TO-DATE
+> Task :feature:player:generateReleaseLintVitalModel UP-TO-DATE
+> Task :app:lintVitalReportRelease UP-TO-DATE
+
+> Task :app:lintVitalRelease FAILED
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\backup_rules.xml:9: Error: resume_positions.db is not in an included path [FullBackupContent]
+    <exclude domain="database" path="resume_positions.db" />
+                                     ~~~~~~~~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\backup_rules.xml:10: Error: ratings_cache.db is not in an included path [FullBackupContent]
+    <exclude domain="database" path="ratings_cache.db" />
+                                     ~~~~~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\backup_rules.xml:11: Error: image_cache/ is not in an included path [FullBackupContent]
+    <exclude domain="file" path="image_cache/" />
+                                 ~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\data_extraction_rules.xml:11: Error: resume_positions.db is not in an included path [FullBackupContent]
+        <exclude domain="database" path="resume_positions.db" />
+                                         ~~~~~~~~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\data_extraction_rules.xml:12: Error: ratings_cache.db is not in an included path [FullBackupContent]
+        <exclude domain="database" path="ratings_cache.db" />
+                                         ~~~~~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\data_extraction_rules.xml:13: Error: image_cache/ is not in an included path [FullBackupContent]
+        <exclude domain="file" path="image_cache/" />
+                                     ~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\data_extraction_rules.xml:19: Error: ratings_cache.db is not in an included path [FullBackupContent]
+        <exclude domain="database" path="ratings_cache.db" />
+                                         ~~~~~~~~~~~~~~~~
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\data_extraction_rules.xml:20: Error: image_cache/ is not in an included path [FullBackupContent]
+        <exclude domain="file" path="image_cache/" />
+                                     ~~~~~~~~~~~~
+
+   Explanation for issues of type "FullBackupContent":
+   Ensures that <data-extraction-rules> and <full-backup-content> files, which
+   configure backup options, are valid.
+
+   https://android-developers.googleblog.com/2015/07/auto-backup-for-apps-made-simple.html
+
+8 errors, 0 warnings
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintVitalRelease'.
+> Lint found fatal errors while assembling a release target.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 8 errors, 0 warnings. First failure:
+  
+  C:\Users\zakwm\aurora-tv\app\src\main\res\xml\backup_rules.xml:9: Error: resume_positions.db is not in an included path [FullBackupContent]
+      <exclude domain="database" path="resume_positions.db" />
+                                       ~~~~~~~~~~~~~~~~~~~
+  
+  The full lint text report is located at:
+    C:\Users\zakwm\aurora-tv\app\build\intermediates\lint_vital_intermediate_text_report\release\lintVitalReportRelease\lint-results-release.txt
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:lintVitalRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: java.lang.RuntimeException: Lint found fatal errors while assembling a release target.
+
+Fix the issues identified by lint, or create a baseline to see only new errors.
+To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+```
+android {
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+}
+```
+For more details, see https://developer.android.com/studio/write/lint#snapshot
+
+Lint found 8 errors, 0 warnings. First failure:
+
+C:\Users\zakwm\aurora-tv\app\src\main\res\xml\backup_rules.xml:9: Error: resume_positions.db is not in an included path [FullBackupContent]
+    <exclude domain="database" path="resume_positions.db" />
+                                     ~~~~~~~~~~~~~~~~~~~
+
+The full lint text report is located at:
+  C:\Users\zakwm\aurora-tv\app\build\intermediates\lint_vital_intermediate_text_report\release\lintVitalReportRelease\lint-results-release.txt
+	at com.android.build.gradle.internal.lint.AndroidLintWorkAction$Companion.maybeThrowException(AndroidLintWorkAction.kt:235)
+	at com.android.build.gradle.internal.lint.AndroidLintTextOutputTask.doTaskAction(AndroidLintTextOutputTask.kt:109)
+	at com.android.build.gradle.internal.tasks.NonIncrementalTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:67)
+	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
+	at com.android.build.gradle.internal.tasks.NonIncrementalTask.taskAction(NonIncrementalTask.kt:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.doExecute(StandardTaskAction.java:58)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+
+
+BUILD FAILED in 18s
+227 actionable tasks: 1 executed, 226 up-to-date

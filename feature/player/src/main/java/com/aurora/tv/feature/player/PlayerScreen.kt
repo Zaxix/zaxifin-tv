@@ -1,5 +1,6 @@
 package com.aurora.tv.feature.player
 
+import android.view.KeyEvent
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -23,8 +24,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.key.KeyEventType
 import androidx.compose.ui.input.key.onPreviewKeyEvent
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.media3.common.Player
@@ -45,9 +46,10 @@ fun PlayerScreen(
     itemId: String,
     onBack: () -> Unit,
 ) {
+    val context = LocalContext.current
     // Minimal, local player for now (placeholder stream wiring comes with Jellyfin repo later).
-    val player = remember {
-        ExoPlayer.Builder(androidx.compose.ui.platform.LocalContext.current).build().apply {
+    val player = remember(context) {
+        ExoPlayer.Builder(context).build().apply {
             repeatMode = Player.REPEAT_MODE_OFF
             playWhenReady = true
         }
@@ -68,7 +70,7 @@ fun PlayerScreen(
             .fillMaxSize()
             .background(Color.Black)
             .onPreviewKeyEvent { event ->
-                if (event.type == KeyEventType.KeyDown) chromeVisible = true
+                if (event.nativeKeyEvent.action == KeyEvent.ACTION_DOWN) chromeVisible = true
                 when (event.toAurora()) {
                     AuroraKey.Back -> {
                         onBack()

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Auto Backup rules. Exclude transient playback state and image cache
-    from cloud backup; include user preferences and server credentials.
+    Auto Backup rules. Keep includes lint-valid; narrow once real DB/cache
+    filenames exist on device.
 -->
 <full-backup-content>
-    <include domain="sharedpref" path="zaxifin_prefs.xml" />
-    <include domain="database" path="servers.db" />
-    <exclude domain="database" path="resume_positions.db" />
-    <exclude domain="database" path="ratings_cache.db" />
-    <exclude domain="file" path="image_cache/" />
+    <!--
+        Lint requires every <exclude> to sit under an included subtree.
+        Until real on-disk paths exist, keep this broad-but-valid; tighten
+        once databases/caches are implemented.
+    -->
+    <include domain="sharedpref" path="." />
+    <include domain="database" path="." />
+    <include domain="file" path="." />
 </full-backup-content>

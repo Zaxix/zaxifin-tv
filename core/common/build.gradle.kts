@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.aurora.tv.core.common"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 28
@@ -21,6 +21,9 @@ android {
 }
 
 dependencies {
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.ui)
+
     implementation(libs.coroutines.android)
 }
 

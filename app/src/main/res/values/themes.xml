@@ -14,11 +14,10 @@
     </style>
 
     <!--
-        Main app theme. Uses Leanback as the parent so TV-specific attributes
-        (focus highlights, D-pad behaviour) are honoured; Compose for TV reads
-        the colors below via MaterialTheme overrides anyway.
+        Main app theme. Material Components parent keeps XML resources linkable
+        without the legacy Leanback theme dependency; UI is Compose-first.
     -->
-    <style name="Theme.Zaxifin" parent="Theme.Leanback">
+    <style name="Theme.Zaxifin" parent="Theme.Material3.Dark.NoActionBar">
         <item name="android:windowBackground">@color/canvas_black</item>
         <item name="android:colorBackground">@color/canvas_black</item>
         <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>

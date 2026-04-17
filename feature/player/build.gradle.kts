@@ -1,13 +1,14 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt)
 }
 
 android {
     namespace = "com.aurora.tv.feature.player"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 28
@@ -24,9 +25,6 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
-    }
 }
 
 dependencies {
@@ -41,7 +39,7 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
 
     implementation(libs.androidx.tv.foundation)
-    implementation(libs.androidx.tv.material3)
+    implementation(libs.androidx.tv.material)
 
     implementation(libs.media3.exoplayer)
     implementation(libs.media3.ui)

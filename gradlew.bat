@@ -9,6 +9,13 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
+rem Prefer a repo-local JDK 17 if present (helps Gradle Kotlin DSL on very new default JDKs).
+if not defined JAVA_HOME (
+  if exist "%APP_HOME%jdk17\unpack\jdk-17.0.18+8\bin\java.exe" (
+    set "JAVA_HOME=%APP_HOME%jdk17\unpack\jdk-17.0.18+8"
+  )
+)
+
 set DEFAULT_JVM_OPTS="-Xmx4g" "-Dfile.encoding=UTF-8"
 
 set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar

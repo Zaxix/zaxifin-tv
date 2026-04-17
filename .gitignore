@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+**/build/
+!**/src/**/build/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.externalNativeBuild/
+.cxx/
+
+# Local tooling
+local.properties
+
+# Local JDK (downloaded for Gradle; not portable across machines)
+jdk17/
+
+# Signing (never commit)
+keystore.properties
+keystore/
+
+# OS junk
+Thumbs.db
+Desktop.ini

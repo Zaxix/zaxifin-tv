@@ -8,6 +8,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.focusable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -52,7 +53,7 @@ fun FocusableCard(
                 clip = false
             }
             .shadow(elevation, shape, clip = false)
-            .androidx.compose.foundation.layout.aspectRatio(aspectRatio)
+            .aspectRatio(aspectRatio)
             .clip(shape)
             .onFocusChanged {
                 focused = it.isFocused
